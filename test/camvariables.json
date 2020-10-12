@@ -1,0 +1,121 @@
+{
+  "input_datatypes": [ ],
+  "input_namespaces": [ ],
+  "output_namespace": "",
+  "input_groups": [
+    {
+      "name": "Instances-ibm_compute_vm_instance.test",
+      "label": "Instances - ibm_compute_vm_instance.test"
+    },
+    {
+      "name": "Other",
+      "label": "Other"
+    },
+    {
+      "name": "ibm_compute_vm_instance_connection",
+      "label": "ibm_compute_vm_instance Connection"
+    }
+  ],
+  "output_groups": [ ],
+  "template_input_params": [
+    {
+      "name": "test_domain",
+      "label": "Test Domain",
+      "description": "The domain for the computing instance.",
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "Instances-ibm_compute_vm_instance.test",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "test_hostname",
+      "label": "Test Hostname",
+      "description": "The hostname for the computing instance.",
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "Instances-ibm_compute_vm_instance.test",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "test_datacenter",
+      "label": "Test Datacenter",
+      "description": "The datacenter in which you want to provision the instance. NOTE: If dedicated_host_name or dedicated_host_id is provided then the datacenter should be same as the dedicated host datacenter.",
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "Instances-ibm_compute_vm_instance.test",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "test_os_reference_code",
+      "label": "Test Os Reference Code",
+      "description": "Generated",
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "Instances-ibm_compute_vm_instance.test",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "ibm_ssh_key_name",
+      "label": "Ibm Ssh Key Name",
+      "description": "Generated",
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "Other",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "test_connection_user",
+      "label": "Test Connection User",
+      "description": null,
+      "type": "string",
+      "default": "root",
+      "regex": "",
+      "group_name": "ibm_compute_vm_instance_connection",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "test_connection_password",
+      "label": "Test Connection Password",
+      "description": null,
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "ibm_compute_vm_instance_connection",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    }
+  ],
+  "template_output_params": [ ]
+}
