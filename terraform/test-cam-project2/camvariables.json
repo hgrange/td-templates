@@ -1,0 +1,195 @@
+{
+  "input_datatypes": [ ],
+  "input_namespaces": [ ],
+  "output_namespace": "",
+  "input_groups": [
+    {
+      "name": "Instances-ibm_compute_vm_instance.web-server",
+      "label": "Instances - ibm_compute_vm_instance.web-server"
+    },
+    {
+      "name": "Other",
+      "label": "Other"
+    },
+    {
+      "name": "instances",
+      "label": "Instances"
+    },
+    {
+      "name": "ibm_compute_vm_instance_networks",
+      "label": "ibm_compute_vm_instance Networks"
+    }
+  ],
+  "output_groups": [ ],
+  "template_input_params": [
+    {
+      "name": "web-server_domain",
+      "label": "Web Server Domain",
+      "description": "The domain for the computing instance.",
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "instances",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "web-server_hostname",
+      "label": "Web Server Hostname",
+      "description": "The hostname for the computing instance.",
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "instances",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "web-server_datacenter",
+      "label": "Web Server Datacenter",
+      "description": "The datacenter in which you want to provision the instance. NOTE: If dedicated_host_name or dedicated_host_id is provided then the datacenter should be same as the dedicated host datacenter.",
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "instances",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "web-server_os_reference_code",
+      "label": "Web Server Os Reference Code",
+      "description": "Generated",
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "instances",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "ibm_ssh_key_name",
+      "label": "Ibm Ssh Key Name",
+      "description": "Generated",
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "instances",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "ibm_network_private_vlan_id",
+      "label": "Ibm Network Private Vlan Id",
+      "description": "Generated",
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "ibm_compute_vm_instance_networks",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "db-server_domain",
+      "label": "Db Server Domain",
+      "description": "The domain for the computing instance.",
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "instances",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "db-server_hostname",
+      "label": "Db Server Hostname",
+      "description": "The hostname for the computing instance.",
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "instances",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "db-server_datacenter",
+      "label": "Db Server Datacenter",
+      "description": "The datacenter in which you want to provision the instance. NOTE: If dedicated_host_name or dedicated_host_id is provided then the datacenter should be same as the dedicated host datacenter.",
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "instances",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "db-server_os_reference_code",
+      "label": "Db Server Os Reference Code",
+      "description": "Generated",
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "instances",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "_public_vlan_id",
+      "label": " Public Vlan Id",
+      "description": "Generated",
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "ibm_compute_vm_instance_networks",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "_private_vlan_id",
+      "label": " Private Vlan Id",
+      "description": "Generated",
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "ibm_compute_vm_instance_networks",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    }
+  ],
+  "template_output_params": [ ]
+}
