@@ -48,7 +48,6 @@ resource "tls_private_key" "ssh" {
 resource "ibm_compute_ssh_key" "auth" {
   label = "CAM Public Key"
   public_key = "${var.ibm_ssh_key_name}"
-  hourly_billing = true
 }
 
 resource "ibm_storage_file" "file_storage" {
