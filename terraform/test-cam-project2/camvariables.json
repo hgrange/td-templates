@@ -111,7 +111,7 @@
       "label": "Ibm Network Public Vlan Id",
       "description": "Generated",
       "type": "string",
-      "default": "2444276",
+      "default": "1570",
       "regex": "",
       "group_name": "ibm_compute_vm_instance_networks",
       "required": true,
@@ -125,7 +125,7 @@
       "label": "Ibm Network Private Vlan Id",
       "description": "Generated",
       "type": "string",
-      "default": "2440194",
+      "default": "1946",
       "regex": "",
       "group_name": "ibm_compute_vm_instance_networks",
       "required": true,
@@ -147,11 +147,31 @@
       "type": "string"
     },
     {
+      "name": "private_subnet_id",
+      "label": "Private Subnet Id",
+      "description": "null",
+      "group_name": "",
+      "secured": false,
+      "hidden": false,
+      "shortname": "",
+      "type": "string"
+    },
+    {
+      "name": "public_subnet_id",
+      "label": "Public Subnet Id",
+      "description": "null",
+      "group_name": "",
+      "secured": false,
+      "hidden": false,
+      "shortname": "",
+      "type": "string"
+    },
+    {
       "name": "TestSecureField",
       "label": "Test Secure Field",
       "description": "null",
       "group_name": "",
-      "secured": false,
+      "secured": true,
       "hidden": false,
       "shortname": "",
       "type": "string"
