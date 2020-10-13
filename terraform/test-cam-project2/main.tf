@@ -4,6 +4,8 @@
 ##
 #####################################################################
 
+## REFERENCE {"ibm_network":{"type": "ibm_reference_network"}}
+
 terraform {
   required_version = "> 0.8.0"
 }
@@ -21,6 +23,8 @@ resource "ibm_compute_vm_instance" "vm_instance" {
   ssh_key_ids = ["${ibm_compute_ssh_key.auth.id}"]
   os_reference_code = "${var.vm_instance_os_reference_code}"
   hourly_billing = true
+  public_vlan_id       = "${var.ibm_network_public_vlan_id}"
+  private_vlan_id       = "${var.ibm_network_private_vlan_id}"
 }
 
 resource "tls_private_key" "ssh" {

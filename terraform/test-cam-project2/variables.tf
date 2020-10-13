@@ -18,7 +18,7 @@ variable "vm_instance_hostname" {
 
 variable "vm_instance_datacenter" {
   type = "string"
-  default = "fra02"
+  default = "par01"
   description = "The datacenter in which you want to provision the instance. NOTE: If dedicated_host_name or dedicated_host_id is provided then the datacenter should be same as the dedicated host datacenter."
 }
 
@@ -39,4 +39,16 @@ variable "testsecurefield" {
   description = "testsecurefield"
   type = "string"
   default     = "123456789"
+}
+
+variable "ibm_network_public_vlan_id" {
+  type = "string"
+  default = "par01.fcr01a.1570"
+  description = "Generated"
+}
+
+variable "ibm_network_private_vlan_id" {
+  type = "string"
+  default = "par01.bcr01a.1946"
+  description = "Generated"
 }
