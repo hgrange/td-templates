@@ -49,8 +49,3 @@ variable "ibm_network_private_vlan_id" {
   description = "Generated"
 }
 
-variable "datacenter" {
-  type = "string"
-  description = "Generated"
-}
-

@@ -27,8 +27,6 @@ resource "ibm_compute_vm_instance" "vm_instance" {
   os_reference_code = "${var.vm_instance_os_reference_code}"
   public_vlan_id       = "${var.ibm_network_public_vlan_id}"
   private_vlan_id       = "${var.ibm_network_private_vlan_id}"
-  file_storage_ids = ["${ibm_storage_file.file_storage_volume.id}"]
-  block_storage_ids = ["${ibm_storage_block.block_storage.id}"]
 }
 
 resource "tls_private_key" "ssh" {
@@ -38,20 +36,5 @@ resource "tls_private_key" "ssh" {
 resource "ibm_compute_ssh_key" "ibm_cloud_temp_public_key" {
   label = "ibm-cloud-temp-public-key"
   public_key = "${tls_private_key.ssh.public_key_openssh}"
-}
-
-resource "ibm_storage_file" "file_storage_volume" {
-  type = "Performance"
-  datacenter = "${var.datacenter}"
-  capacity = "20"
-  iops = "100"
-}
-
-resource "ibm_storage_block" "block_storage" {
-  type = "Performance"
-  datacenter = "${var.datacenter}"
-  capacity = "20"
-  iops = "100"
-  os_format_type = "Linux"
 }
 
