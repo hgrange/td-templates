@@ -28,7 +28,6 @@ resource "tls_private_key" "ssh" {
 }
 
 resource "ibm_compute_ssh_key" "auth" {
-  label = "${var.ibm_ssh_key_name}"
-  public_key = "${tls_private_key.ssh.public_key_openssh}"
+  label = "CAM Public Key"
+  public_key = "${var.ibm_ssh_key_name}"
 }
-

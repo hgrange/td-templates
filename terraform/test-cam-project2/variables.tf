@@ -25,6 +25,7 @@ variable "vm_instance_datacenter" {
 
 variable "ibm_ssh_key_name" {
   type = "string"
+  default = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCryc9ZCQX2BWO8baPAM78rGpviaHAesmnlaENtqbEmEDuY1znPszHVWlbrBsZlpu+HZAIPZQHMQ4RRZ8k+94Tp4KLHwP/YoWRkXFKuQgxDqfwCb80OaJpNZsf1u6zXf0NQhhgdLmBkSwy8YHvh9j1Vl9kDDsKIzmwzrDUAIohcLVIETgKZpIMtGL7vpMsMg5Qg6ddWb5UkRJiQbGWBAupCKPENqGttW5050DkDYPEM5hbLRwiPjOA/EuNYU9G9Nj9pFTgD+J6xQMeLbpYtVtBUZCtuIYUjl2uRlKrYUXwdwum9AtLvRr0HpS75LfBugvjT4E9jkoVQrunJ9cZnhKPP"
   description = "Generated"
 }
 
