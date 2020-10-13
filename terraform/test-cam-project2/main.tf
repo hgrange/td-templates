@@ -23,7 +23,6 @@ resource "ibm_compute_vm_instance" "vm_instance" {
   hourly_billing = true
 }
 
-
 resource "tls_private_key" "ssh" {
   algorithm = "RSA"
 }
