@@ -18,6 +18,14 @@
     {
       "name": "ibm_compute_vm_instance_networks",
       "label": "ibm_compute_vm_instance Networks"
+    },
+    {
+      "name": "ibm_compute_vm_instance_connection",
+      "label": "ibm_compute_vm_instance Connection"
+    },
+    {
+      "name": "ibm_storage_file_storage",
+      "label": "ibm_storage_file Storage"
     }
   ],
   "output_groups": [ ],
@@ -41,7 +49,7 @@
       "label": "Vm Instance Hostname",
       "description": "The hostname for the computing instance.",
       "type": "string",
-      "default": "host1",
+      "default": "webhost",
       "regex": "",
       "group_name": "",
       "required": true,
@@ -133,32 +141,40 @@
       "hidden": false,
       "immutable": false,
       "immutable_after_create": false
+    },
+    {
+      "name": "vm_instance1_hostname",
+      "label": "Vm Instance 1 Hostname",
+      "description": "The hostname for the computing instance.",
+      "type": "string",
+      "default": "dbhost",
+      "regex": "",
+      "group_name": "instances",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "vm_instance1_os_reference_code",
+      "label": "Vm Instance 1 Os Reference Code",
+      "description": "Generated",
+      "type": "string",
+      "default": "UBUNTU_16_64",
+      "regex": "",
+      "group_name": "instances",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
     }
   ],
   "template_output_params": [
     {
       "name": "IP_address_VM",
       "label": "Ip Address Vm",
-      "description": "null",
-      "group_name": "",
-      "secured": false,
-      "hidden": false,
-      "shortname": "",
-      "type": "string"
-    },
-    {
-      "name": "private_subnet_id",
-      "label": "Private Subnet Id",
-      "description": "null",
-      "group_name": "",
-      "secured": false,
-      "hidden": false,
-      "shortname": "",
-      "type": "string"
-    },
-    {
-      "name": "public_subnet_id",
-      "label": "Public Subnet Id",
       "description": "null",
       "group_name": "",
       "secured": false,

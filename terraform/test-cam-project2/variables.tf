@@ -12,7 +12,7 @@ variable "vm_instance_domain" {
 
 variable "vm_instance_hostname" {
   type = "string"
-  default = "host1"
+  default = "webhost"
   description = "The hostname for the computing instance."
 }
 
@@ -52,4 +52,19 @@ variable "ibm_network_private_vlan_id" {
   description = "Generated"
   default = "2894294"
 }
+
+variable "vm_instance1_hostname" {
+  type = "string"
+  default = "dbhost"
+  description = "The hostname for the computing instance."
+}
+
+variable "vm_instance1_os_reference_code" {
+  type = "string"
+  description = "Generated"
+  default     = "UBUNTU_16_64"
+}
+
+
+
 
