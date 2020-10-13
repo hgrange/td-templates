@@ -1,0 +1,198 @@
+{
+  "input_datatypes": [ ],
+  "input_namespaces": [ ],
+  "output_namespace": "",
+  "input_groups": [
+    {
+      "name": "Instances-ibm_compute_vm_instance.softlayer_virtual_guest",
+      "label": "Instances - ibm_compute_vm_instance.softlayer_virtual_guest"
+    },
+    {
+      "name": "Other",
+      "label": "Other"
+    },
+    {
+      "name": "Unused",
+      "label": "Unused"
+    }
+  ],
+  "output_groups": [ ],
+  "template_input_params": [
+    {
+      "name": "datacenter",
+      "label": "Datacenter",
+      "description": "Softlayer datacenter where infrastructure resources will be deployed",
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "Instances-ibm_compute_vm_instance.softlayer_virtual_guest",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "hostname",
+      "label": "Hostname",
+      "description": "Hostname of the virtual instance to be deployed",
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "Instances-ibm_compute_vm_instance.softlayer_virtual_guest",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "testsecurefield",
+      "label": "Testsecurefield",
+      "description": "testsecurefield",
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "Other",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "public_ssh_key",
+      "label": "Public Ssh Key",
+      "description": "Public SSH key used to connect to the virtual guest",
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "Other",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "deploy_nagios",
+      "label": "Deploy Nagios",
+      "description": "Indicates whether monitoring(nagios) should be enabled.",
+      "type": "string",
+      "default": "true",
+      "regex": "",
+      "group_name": "Unused",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "bastion_host",
+      "label": "Bastion Host",
+      "description": null,
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "Instances-ibm_compute_vm_instance.softlayer_virtual_guest",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "bastion_user",
+      "label": "Bastion User",
+      "description": null,
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "Instances-ibm_compute_vm_instance.softlayer_virtual_guest",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "bastion_private_key",
+      "label": "Bastion Private Key",
+      "description": null,
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "Instances-ibm_compute_vm_instance.softlayer_virtual_guest",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "bastion_port",
+      "label": "Bastion Port",
+      "description": null,
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "Instances-ibm_compute_vm_instance.softlayer_virtual_guest",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "bastion_host_key",
+      "label": "Bastion Host Key",
+      "description": null,
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "Instances-ibm_compute_vm_instance.softlayer_virtual_guest",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "bastion_password",
+      "label": "Bastion Password",
+      "description": null,
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "Instances-ibm_compute_vm_instance.softlayer_virtual_guest",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    }
+  ],
+  "template_output_params": [
+    {
+      "name": "IP_address_VM",
+      "label": "Ip Address Vm",
+      "description": null,
+      "group_name": "",
+      "secured": false,
+      "hidden": false,
+      "shortname": "",
+      "type": "string"
+    },
+    {
+      "name": "TestSecureField",
+      "label": "Test Secure Field",
+      "description": null,
+      "group_name": "",
+      "secured": false,
+      "hidden": false,
+      "shortname": "",
+      "type": "string"
+    }
+  ]
+}

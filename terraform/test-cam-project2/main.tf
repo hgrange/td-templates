@@ -18,9 +18,11 @@ resource "ibm_compute_vm_instance" "vm_instance" {
   domain      = "${var.vm_instance_domain}"
   hostname    = "${var.vm_instance_hostname}"
   datacenter  = "${var.vm_instance_datacenter}"
-  ssh_key_ids = ["${ibm_compute_ssh_key.auth.id}"]
-  image_id    = "${var.vm_instance_image_id}"
+#  ssh_key_ids = ["${ibm_compute_ssh_key.auth.id}"]
+  os_reference_code = "${var.vm_instance_os_reference_code}"
+  hourly_billing = true
 }
+
 
 resource "tls_private_key" "ssh" {
   algorithm = "RSA"
