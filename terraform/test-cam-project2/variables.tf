@@ -43,12 +43,12 @@ variable "testsecurefield" {
 
 variable "ibm_network_public_vlan_id" {
   type = "string"
-  default = "par01.fcr01a.1570"
+  default = "2444276"
   description = "Generated"
 }
 
 variable "ibm_network_private_vlan_id" {
   type = "string"
-  default = "par01.bcr01a.1946"
+  default = "2440194"
   description = "Generated"
 }
