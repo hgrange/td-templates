@@ -91,7 +91,42 @@
       "hidden": false,
       "immutable": false,
       "immutable_after_create": false
+    },
+    {
+      "name": "testsecurefield",
+      "label": "Testsecurefield",
+      "description": "testsecurefield",
+      "type": "string",
+      "default": "123456789",
+      "regex": "",
+      "group_name": "",
+      "required": true,
+      "secured": true,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
     }
   ],
-  "template_output_params": [ ]
+  "template_output_params": [
+    {
+      "name": "IP_address_VM",
+      "label": "Ip Address Vm",
+      "description": "null",
+      "group_name": "",
+      "secured": false,
+      "hidden": false,
+      "shortname": "",
+      "type": "string"
+    },
+    {
+      "name": "TestSecureField",
+      "label": "Test Secure Field",
+      "description": "null",
+      "group_name": "",
+      "secured": false,
+      "hidden": false,
+      "shortname": "",
+      "type": "string"
+    }
+  ]
 }

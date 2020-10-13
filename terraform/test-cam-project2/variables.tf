@@ -35,3 +35,8 @@ variable "vm_instance_os_reference_code" {
   default     = "UBUNTU_16_64"
 }
 
+variable "testsecurefield" {
+  description = "testsecurefield"
+  type = "string"
+  default     = "123456789"
+}

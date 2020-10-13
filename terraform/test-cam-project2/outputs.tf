@@ -4,3 +4,9 @@
 ##
 #####################################################################
 
+output "IP_address_VM" {
+  value = "${ibm_compute_vm_instance.vm_instance.ipv4_address}"
+}
+output "TestSecureField" {
+  value = "${var.testsecurefield}"
+}
