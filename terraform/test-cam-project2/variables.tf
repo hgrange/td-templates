@@ -53,3 +53,23 @@ variable "ibm_network_private_vlan_id" {
   default = "2894294"
 }
 
+variable "dbserver_domain" {
+  type = "string"
+  default = "ibm.com"
+  description = "The domain for the computing instance."
+}
+
+variable "dbserver_hostname" {
+  type = "string"
+  value = "dbhost"
+  description = "The hostname for the computing instance."
+}
+
+variable "dbserver_datacenter" {
+  type = "string"
+  value = "par01"
+  description = "The datacenter in which you want to provision the instance. NOTE: If dedicated_host_name or dedicated_host_id is provided then the datacenter should be same as the dedicated host datacenter."
+}
+
+
+

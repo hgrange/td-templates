@@ -27,6 +27,19 @@ resource "ibm_compute_vm_instance" "webserver" {
   private_vlan_id       = "${var.ibm_network_private_vlan_id}"
 }
 
+resource "ibm_compute_vm_instance" "dbserver" {
+  cores       = 1
+  memory      = 1024
+  domain      = "${var.dbserver_domain}"
+  hostname    = "${var.dbserver_hostname}"
+  datacenter  = "${var.dbserver_datacenter}"
+  ssh_key_ids = ["${ibm_compute_ssh_key.auth.id}"]
+  os_reference_code = "${vm_instance_os_reference_code}"
+  hourly_billing = true
+  public_vlan_id       = "${var.ibm_network_public_vlan_id}"
+  private_vlan_id       = "${var.ibm_network_private_vlan_id}"
+}
+
 resource "tls_private_key" "ssh" {
   algorithm = "RSA"
 }
