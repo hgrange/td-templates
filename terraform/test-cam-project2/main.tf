@@ -30,15 +30,14 @@ resource "ibm_compute_vm_instance" "webserver" {
 resource "ibm_compute_vm_instance" "dbserver" {
   cores       = 1
   memory      = 1024
-  domain      = "${var.vm_instance_domain}"
-  hostname    = "${var.vm_instance1_hostname}"
+  domain      = "${var.dbserver_domain}"
+  hostname    = "${var.dbserver_hostname}"
   datacenter  = "${var.vm_instance_datacenter}"
   ssh_key_ids = ["${ibm_compute_ssh_key.auth.id}"]
-  os_reference_code = "${var.vm_instance1_os_reference_code}"
+  os_reference_code = "${var.dbserver_os_reference_code}"
+  hourly_billing = true
   public_vlan_id       = "${var.ibm_network_public_vlan_id}"
   private_vlan_id       = "${var.ibm_network_private_vlan_id}"
-  file_storage_ids = ["${ibm_storage_file.file_storage.id}"]
-  hourly_billing = true
 }
 
 resource "tls_private_key" "ssh" {

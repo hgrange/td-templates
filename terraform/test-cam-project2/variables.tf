@@ -53,18 +53,18 @@ variable "ibm_network_private_vlan_id" {
   default = "2894294"
 }
 
-variable "vm_instance1_hostname" {
+variable "dbserver_domain" {
   type = "string"
-  default = "dbhost"
+  description = "The domain for the computing instance."
+}
+
+variable "dbserver_hostname" {
+  type = "string"
   description = "The hostname for the computing instance."
 }
 
-variable "vm_instance1_os_reference_code" {
+variable "dbserver_os_reference_code" {
   type = "string"
   description = "Generated"
-  default     = "UBUNTU_16_64"
 }
-
-
-
 

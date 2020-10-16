@@ -143,11 +143,11 @@
       "immutable_after_create": false
     },
     {
-      "name": "vm_instance1_hostname",
-      "label": "Vm Instance 1 Hostname",
-      "description": "The hostname for the computing instance.",
+      "name": "dbserver_domain",
+      "label": "Dbserver Domain",
+      "description": "The domain for the computing instance.",
       "type": "string",
-      "default": "dbhost",
+      "default": "",
       "regex": "",
       "group_name": "instances",
       "required": true,
@@ -157,11 +157,25 @@
       "immutable_after_create": false
     },
     {
-      "name": "vm_instance1_os_reference_code",
-      "label": "Vm Instance 1 Os Reference Code",
+      "name": "dbserver_hostname",
+      "label": "Dbserver Hostname",
+      "description": "The hostname for the computing instance.",
+      "type": "string",
+      "default": "",
+      "regex": "",
+      "group_name": "instances",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "dbserver_os_reference_code",
+      "label": "Dbserver Os Reference Code",
       "description": "Generated",
       "type": "string",
-      "default": "UBUNTU_16_64",
+      "default": "",
       "regex": "",
       "group_name": "instances",
       "required": true,
@@ -175,17 +189,7 @@
     {
       "name": "IP_address_VM1",
       "label": "Ip Address Vm 1",
-      "description": null,
-      "group_name": "",
-      "secured": false,
-      "hidden": false,
-      "shortname": "",
-      "type": "string"
-    },
-    {
-      "name": "IP_address_VM2",
-      "label": "Ip Address Vm 2",
-      "description": null,
+      "description": "null",
       "group_name": "",
       "secured": false,
       "hidden": false,
@@ -195,9 +199,9 @@
     {
       "name": "TestSecureField",
       "label": "Test Secure Field",
-      "description": null,
+      "description": "null",
       "group_name": "",
-      "secured": false,
+      "secured": true,
       "hidden": false,
       "shortname": "",
       "type": "string"
