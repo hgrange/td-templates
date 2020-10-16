@@ -141,48 +141,6 @@
       "hidden": false,
       "immutable": false,
       "immutable_after_create": false
-    },
-    {
-      "name": "dbserver_domain",
-      "label": "Dbserver Domain",
-      "description": "The domain for the computing instance.",
-      "type": "string",
-      "default": "ibm.com",
-      "regex": "",
-      "group_name": "instances",
-      "required": true,
-      "secured": false,
-      "hidden": false,
-      "immutable": false,
-      "immutable_after_create": false
-    },
-    {
-      "name": "dbserver_hostname",
-      "label": "Dbserver Hostname",
-      "description": "The hostname for the computing instance.",
-      "type": "string",
-      "default": "dbhost",
-      "regex": "",
-      "group_name": "instances",
-      "required": true,
-      "secured": false,
-      "hidden": false,
-      "immutable": false,
-      "immutable_after_create": false
-    },
-    {
-      "name": "dbserver_os_reference_code",
-      "label": "Dbserver Os Reference Code",
-      "description": "Generated",
-      "type": "string",
-      "default": "UBUNTU_16_64",
-      "regex": "",
-      "group_name": "instances",
-      "required": true,
-      "secured": false,
-      "hidden": false,
-      "immutable": false,
-      "immutable_after_create": false
     }
   ],
   "template_output_params": [
