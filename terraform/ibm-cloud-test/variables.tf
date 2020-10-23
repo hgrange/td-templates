@@ -32,7 +32,7 @@ variable "ibm_ssh_key_name" {
 variable "vm_webserver_os_reference_code" {
   type = "string"
   description = "Generated"
-  default     = "UBUNTU_16_64"
+  default     = "CENTOS_7_64"
 }
 
 variable "testsecurefield" {
@@ -74,7 +74,7 @@ variable "vm_dbserver_datacenter" {
 variable "vm_dbserver_os_reference_code" {
   type = "string"
   description = "Generated"
-  default     = "UBUNTU_16_64"
+  default     = "CENTOS_7_64"
 }
 
 
