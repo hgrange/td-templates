@@ -318,9 +318,9 @@
               }
             },
             {
-              "ibm-cloud-test-dev": {
+              "ibm-cloud-test-Dev": {
                 "title": "ibm-cloud-test-dev_1vm",
-                "template_name": "ibm-cloud-test-dev",
+                "template_name": "ibm-cloud-test-Dev",
                 "version": "master",
                 "id": "ibmcloud9c75f1f4",
                 "template_type": "Terraform",
