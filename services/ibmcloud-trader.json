@@ -123,11 +123,6 @@
         "default": "${svc_instance.service_instance_id}"
       }
     ],
-    "upgrade_from": [
-      {
-        "version": "1.0.0.1"
-      }
-    ],
     "downgrade_to": [],
     "actions": [
       {
@@ -228,14 +223,14 @@
                   {
                     "case": "false",
                     "sequence": {
-                      "0": "ibmcloud57f071a4",
+                      "0": "ibmcloud85f99f10",
                       "1": "inventore4504cc4"
                     }
                   },
                   {
                     "case": "true",
                     "sequence": {
-                      "0": "ibmcloud9c75f1f4",
+                      "0": "ibmcloude985318d",
                       "1": "inventor60dc2369"
                     }
                   }
@@ -250,20 +245,20 @@
           "templates": [
             {
               "ibm-cloud-test": {
-                "title": "ibm-cloud-test_2vms",
+                "title": "ibm-cloud-test_c0f147",
                 "template_name": "ibm-cloud-test",
                 "version": "master",
-                "id": "ibmcloud57f071a4",
+                "id": "ibmcloud85f99f10",
                 "template_type": "Terraform",
-                "template_content_type": "IBM",
-                "template_provider": "IBM",
-                "instance_name": "trader2vms",
+                "template_content_type": "IBM,Other",
+                "template_provider": "IBM,Other",
+                "instance_name": "",
                 "template_data_objects": {},
                 "template_params": {
                   "vm_webserver_domain": "ibm.com",
                   "vm_webserver_hostname": "webhost",
                   "vm_webserver_datacenter": "par01",
-                  "ibm_ssh_key_name": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDWVcdGD+xpfEiWYjSXRd1k77kFewP0JwNQLVDyTUefrWTVmFGlBN4ycc1M16TB2I+7V+ZxWZDdY8M11/WEiegTvCEs6XVziG9Aa6cUsrALAWuxBdOcK4Hvpb0W09AaLep8k2DAuRiVswxUi8CcEbenvMu4GzJqs7t77Zm1KN65hKyw4PYAMg9aKt2VmrM7LoYZCr8759y8GIaiwE3UZDb3YAc9nfxc+el+2Nga9o+mwyD1VmjTuSRYs37ndBRsry5au6cuP2T1JYZWfRh9Fpnj3bVbeGrmjLuoSTruzqJKTr/dUBklEZvsLPkpqN5cXLt2LDmws7p+uaNRrgok8nGt mcm@baremetal04.herve-grange-s-account.cloud",
+                  "ibm_ssh_key_name": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDWVcdGD+xpfEiWYjSXRd1k77kFewP0JwNQLVDyTUefrWTVmFGlBN4ycc1M16TB2I+7V+ZxWZDdY8M11/WEiegTvCEs6XVziG9Aa6cUsrALAWuxBdOcK4Hvpb0W09AaLep8k2DAuRiVswxUi8CcEbenvMu4GzJqs7t77Zm1KN65hKyw4PYAMg9aKt2VmrM7LoYZCr8759y8GIaiwE3UZDb3YAc9nfxc+el+2Nga9o+mwyD1VmjTuSRYs37ndBRsry5au6cuP2T1JYZWfRh9Fpnj3bVbeGrmjLuoSTruzqJKTr/dUBklEZvsLPkpqN5cXLt2LDmws7p+uaNRrgok8nGt",
                   "vm_webserver_os_reference_code": "CENTOS_7_64",
                   "testsecurefield": "123456789",
                   "ibm_network_public_vlan_id": "2894292",
@@ -282,11 +277,14 @@
                 "cloud_connection_names": [
                   {
                     "provider": "IBM",
-                    "connection_name": "ibmcloud"
+                    "connection_name": "IBM_CLOUD"
+                  },
+                  {
+                    "provider": "Other",
+                    "connection_name": "Other"
                   }
                 ],
-                "provider_engine_version": "0.11.11",
-                "isErrorFlow": false
+                "provider_engine_version": "0.11.11"
               }
             },
             {
@@ -306,8 +304,8 @@
                   "inventoryName": "",
                   "extraVars": {},
                   "hostgroup": {
-                    "webhosts": "${templates.ibmcloud57f071a4.output.IP_address_webserver}",
-                    "dbhosts": "${templates.ibmcloud57f071a4.output.IP_address_dbserver}"
+                    "webhosts": "${templates.ibmcloud85f99f10.output.IP_address_webserver}",
+                    "dbhosts": "${templates.ibmcloud85f99f10.output.IP_address_dbserver}"
                   }
                 },
                 "outputs": [
@@ -318,15 +316,15 @@
               }
             },
             {
-              "ibm-cloud-test-Dev": {
-                "title": "ibm-cloud-test-dev_1vm",
-                "template_name": "ibm-cloud-test-Dev",
+              "ibm-cloud-test-dev": {
+                "title": "ibm-cloud-test-dev_361a2d",
+                "template_name": "ibm-cloud-test-dev",
                 "version": "master",
-                "id": "ibmcloud9c75f1f4",
+                "id": "ibmcloude985318d",
                 "template_type": "Terraform",
                 "template_content_type": "IBM,Other",
                 "template_provider": "IBM,Other",
-                "instance_name": "trader1vm",
+                "instance_name": "",
                 "template_data_objects": {},
                 "template_params": {
                   "vm_webserver_domain": "ibm.com",
@@ -346,7 +344,7 @@
                 "cloud_connection_names": [
                   {
                     "provider": "IBM",
-                    "connection_name": "ibmcloud"
+                    "connection_name": "IBM_CLOUD"
                   },
                   {
                     "provider": "Other",
@@ -373,8 +371,8 @@
                   "inventoryName": "",
                   "extraVars": {},
                   "hostgroup": {
-                    "webhosts": "${templates.ibmcloud9c75f1f4.output.IP_address_webserver}",
-                    "dbhosts": "${templates.ibmcloud9c75f1f4.output.IP_address_webserver}"
+                    "webhosts": "${templates.ibmcloude985318d.output.IP_address_webserver}",
+                    "dbhosts": "${templates.ibmcloude985318d.output.IP_address_webserver}"
                   }
                 },
                 "outputs": [
@@ -425,8 +423,8 @@
                   "inventory_name": "${templates.inventore4504cc4.output.inventory_name||templates.inventor60dc2369.output.inventory_name}",
                   "credential_name": "${templates.credenti435b6a55.output.credential_name}",
                   "extra_variables": {
-                    "ipdb": "${templates.ibmcloud57f071a4.output.IP_address_dbserver||templates.ibmcloud9c75f1f4.output.IP_address_webserver}",
-                    "ipweb": "${templates.ibmcloud57f071a4.output.IP_address_webserver||templates.ibmcloud9c75f1f4.output.IP_address_webserver}"
+                    "ipdb": "${templates.ibmcloud85f99f10.output.IP_address_dbserver||templates.ibmcloude985318d.output.IP_address_webserver}",
+                    "ipweb": "${templates.ibmcloud85f99f10.output.IP_address_webserver||templates.ibmcloude985318d.output.IP_address_webserver}"
                   }
                 },
                 "outputs": [
@@ -454,7 +452,7 @@
                       "type": "section",
                       "text": {
                         "type": "mrkdwn",
-                        "text": "You can access the application on this url : http://${templates.ibmcloud57f071a4.output.IP_address_webserver||templates.ibmcloud9c75f1f4.output.IP_address_webserver}:9080/tradelite"
+                        "text": "You can access the application on this url : http://${templates.ibmcloud85f99f10.output.IP_address_webserver||templates.ibmcloude985318d.output.IP_address_webserver}:9080/tradelite"
                       }
                     }
                   ]
