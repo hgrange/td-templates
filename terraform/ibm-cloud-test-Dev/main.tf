@@ -14,6 +14,10 @@ provider "ibm" {
   version = "~> 0.7"
 }
 
+provider "tls" {  
+  version = "~> 2.0"
+}
+
 resource "ibm_compute_vm_instance" "webserver" {
   cores       = 1
   memory      = 1024
