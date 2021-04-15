@@ -99,14 +99,14 @@
     {
       "name": "testsecurefield",
       "label": "Testsecurefield",
-      "description": "testsecurefield",
+      "description": "testsecurefield2",
       "type": "string",
       "default": "123456789",
       "regex": "",
       "group_name": "Other",
       "required": true,
-      "secured": false,
-      "hidden": false,
+      "secured": true,
+      "hidden": true,
       "immutable": false,
       "immutable_after_create": false
     },
