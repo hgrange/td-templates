@@ -29,7 +29,7 @@
     {
       "name": "vm_webserver_domain",
       "label": "Vm Webserver Domain",
-      "description": "The domain for the computing instance.",
+      "description": "The domain for the computing instance..",
       "type": "string",
       "default": "ibm.com",
       "regex": "",
