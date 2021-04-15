@@ -221,8 +221,8 @@
       "label": "Test Secure Field",
       "description": "null",
       "group_name": "",
-      "secured": false,
-      "hidden": false,
+      "secured": true,
+      "hidden": true,
       "shortname": "",
       "type": "string"
     }
