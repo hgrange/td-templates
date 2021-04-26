@@ -12,12 +12,8 @@
       "label": "Instances"
     },
     {
-      "name": "Instances-ibm_compute_vm_instance.dbserver",
-      "label": "Instances - ibm_compute_vm_instance.dbserver"
-    },
-    {
-      "name": "Instances-ibm_compute_vm_instance.webserver",
-      "label": "Instances - ibm_compute_vm_instance.webserver"
+      "name": "Instances-ibm_compute_vm_instance.server1",
+      "label": "Instances - ibm_compute_vm_instance.server1"
     },
     {
       "name": "Other",
@@ -27,8 +23,8 @@
   "output_groups": [ ],
   "template_input_params": [
     {
-      "name": "vm_webserver_domain",
-      "label": "Vm Webserver Domain",
+      "name": "vm_server1_domain",
+      "label": "Vm server1 Domain",
       "description": "The domain for the computing instance.",
       "type": "string",
       "default": "ibm.com",
@@ -41,11 +37,11 @@
       "immutable_after_create": false
     },
     {
-      "name": "vm_webserver_hostname",
-      "label": "Vm Webserver Hostname",
+      "name": "vm_server1_hostname",
+      "label": "Vm server1 Hostname",
       "description": "The hostname for the computing instance.",
       "type": "string",
-      "default": "webhost",
+      "default": "host1",
       "regex": "",
       "group_name": "",
       "required": true,
@@ -55,8 +51,8 @@
       "immutable_after_create": false
     },
     {
-      "name": "vm_webserver_datacenter",
-      "label": "Vm Webserver Datacenter",
+      "name": "vm_server1_datacenter",
+      "label": "Vm server1 Datacenter",
       "description": "The datacenter in which you want to provision the instance. NOTE: If dedicated_host_name or dedicated_host_id is provided then the datacenter should be same as the dedicated host datacenter.",
       "type": "string",
       "default": "par01",
@@ -83,11 +79,25 @@
       "immutable_after_create": false
     },
     {
-      "name": "vm_webserver_os_reference_code",
-      "label": "Vm Webserver Os Reference Code",
+      "name": "vm_server1_os_reference_code",
+      "label": "Vm server Os Reference Code",
       "description": "Generated",
       "type": "string",
       "default": "CENTOS_7_64",
+      "regex": "",
+      "group_name": "",
+      "required": true,
+      "secured": false,
+      "hidden": false,
+      "immutable": false,
+      "immutable_after_create": false
+    },
+    {
+      "name": "vm_server1_disks",
+      "label": "Vm server Os Reference Code",
+      "description": "Generated",
+      "type": "string",
+      "default": "25,25",
       "regex": "",
       "group_name": "",
       "required": true,
@@ -141,8 +151,8 @@
   ],
   "template_output_params": [
     {
-      "name": "IP_address_webserver",
-      "label": "Ip Address Webserver",
+      "name": "IP_address_server1",
+      "label": "Ip Address server1",
       "description": "null",
       "group_name": "",
       "secured": false,
