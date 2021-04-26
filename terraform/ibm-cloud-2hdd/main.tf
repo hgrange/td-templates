@@ -13,15 +13,15 @@ provider "tls" {
 resource "ibm_compute_vm_instance" "server1" {
   cores       = 1
   memory      = 1024
-  domain      = "${var.vm_webserver_domain}"
-  hostname    = "${var.vm_webserver_hostname}"
-  datacenter  = "${var.vm_webserver_datacenter}"
+  domain      = "${var.vm_server1_domain}"
+  hostname    = "${var.vm_server1_hostname}"
+  datacenter  = "${var.vm_server1_datacenter}"
   ssh_key_ids = ["${ibm_compute_ssh_key.auth.id}"]
   os_reference_code = "${var.vm_webserver_os_reference_code}"
   hourly_billing = true
   public_vlan_id       = "${var.ibm_network_public_vlan_id}"
   private_vlan_id       = "${var.ibm_network_private_vlan_id}"
-  disks = [25,25]
+  disks = ["${var.vm_server1_disks}"]
 }
 
 resource "tls_private_key" "ssh" {
