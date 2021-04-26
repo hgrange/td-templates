@@ -10,7 +10,7 @@ provider "tls" {
   version = "~> 2.0"
 }
 
-resource "ibm_compute_vm_instance" "webserver" {
+resource "ibm_compute_vm_instance" "server1" {
   cores       = 1
   memory      = 1024
   domain      = "${var.vm_webserver_domain}"
