@@ -21,7 +21,7 @@ resource "ibm_compute_vm_instance" "server1" {
   hourly_billing = true
   public_vlan_id       = "${var.ibm_network_public_vlan_id}"
   private_vlan_id       = "${var.ibm_network_private_vlan_id}"
-  disks = ["${var.vm_server1_disks}"]
+  disks = "${var.vm_server1_disks}"
 }
 
 resource "tls_private_key" "ssh" {
