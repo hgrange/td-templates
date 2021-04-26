@@ -97,7 +97,7 @@
       "label": "Vm server Os Reference Code",
       "description": "Generated",
       "type": "string",
-      "default": "25,25",
+      "default": "25, 25",
       "regex": "",
       "group_name": "",
       "required": true,
