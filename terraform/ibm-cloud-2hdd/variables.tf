@@ -4,19 +4,19 @@
 ##
 #####################################################################
 
-variable "vm_webserver_domain" {
+variable "vm_server1_domain" {
   type = "string"
   default = "ibm.com"
   description = "The domain for the computing instance."
 }
 
-variable "vm_webserver_hostname" {
+variable "vm_server1_hostname" {
   type = "string"
-  default = "webhost"
+  default = "host1"
   description = "The hostname for the computing instance."
 }
 
-variable "vm_webserver_datacenter" {
+variable "vm_server1_datacenter" {
   type = "string"
   default = "par01"
   description = "The datacenter in which you want to provision the instance. NOTE: If dedicated_host_name or dedicated_host_id is provided then the datacenter should be same as the dedicated host datacenter."
