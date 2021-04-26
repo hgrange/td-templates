@@ -15,11 +15,6 @@ variable "vm_server1_hostname" {
   default = "host1"
   description = "The hostname for the computing instance."
 }
-variable "vm_server1_disks" {
-  type = "string"
-  default = [25, 25]
-  description = "Sizes of the disks"
-}
 variable "vm_server1_datacenter" {
   type = "string"
   default = "par01"
