@@ -17,7 +17,7 @@ variable "vm_server1_hostname" {
 }
 variable "vm_server1_disks" {
   type = "string"
-  default = "[25, 25]"
+  default = [25, 25]
   description = "Sizes of the disks"
 }
 variable "vm_server1_datacenter" {
