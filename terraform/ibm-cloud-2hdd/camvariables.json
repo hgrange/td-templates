@@ -94,7 +94,7 @@
     },
     {
       "name": "vm_server1_disks",
-      "label": "Vm server Os Reference Code",
+      "label": "Vm server Os Disks",
       "description": "Generated",
       "type": "string",
       "default": [25, 25],
