@@ -93,20 +93,6 @@
       "immutable_after_create": false
     },
     {
-      "name": "vm_server1_disks",
-      "label": "Vm server Os Disks",
-      "description": "Generated",
-      "type": "string",
-      "default": [25, 25],
-      "regex": "",
-      "group_name": "",
-      "required": true,
-      "secured": false,
-      "hidden": false,
-      "immutable": false,
-      "immutable_after_create": false
-    },
-    {
       "name": "testsecurefield",
       "label": "Testsecurefield",
       "description": "testsecurefield",
