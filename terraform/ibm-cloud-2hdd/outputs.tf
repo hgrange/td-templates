@@ -4,7 +4,7 @@
 ##
 #####################################################################
 
-output "IP_address_webserver" {
+output "IP_address_server1" {
   value = "${ibm_compute_vm_instance.server1.ipv4_address}"
 }
 output "TestSecureField" {
