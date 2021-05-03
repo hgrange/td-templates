@@ -67,7 +67,7 @@ variable "public_ssh_key" {
 variable "aws_image" {
   type        = "string"
   description = "Operating system image id / template that should be used when creating the virtual image"
-  default     = "CentOS Linux 7*"
+  default     = "CentOS 7*"
 }
 
 variable "aws_ami_owner_id" {
