@@ -5,7 +5,7 @@
 			"name": "aws_region",
 			"type": "string",
 			"description": "AWS Region Name",
-			"default": "eu-central-1a",
+			"default": "eu-central-1",
 			"hidden": false,
 			"label": "AWS Region Name",
 			"secured": false,
@@ -33,7 +33,7 @@
 					"value": "eu-west-1",
 					"label": "EU (Ireland)"
 				}, {
-					"value": "eu-central-1a",
+					"value": "eu-central-1",
 					"label": "EU (Frankfurt)"
 				}, {
 					"value": "eu-west-2",
