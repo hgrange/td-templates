@@ -89,6 +89,10 @@ data "aws_ami" "aws_ami" {
     name   = "name"
     values = ["${var.aws_image}*"]
   }
+  filter {
+    name   = "architecture"
+    values = ["x86_64"]
+  }
 
   owners = ["${var.aws_ami_owner_id}"]
 }
