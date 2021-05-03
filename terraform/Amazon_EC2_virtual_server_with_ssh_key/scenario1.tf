@@ -22,11 +22,12 @@ module "camtags" {
 
 variable "aws_region" {
   description = "AWS region to launch servers."
-  default     = "us-east-1"
+  default     = "eu-central-1a"
 }
 
 variable "vpc_name_tag" {
   description = "Name of the Virtual Private Cloud (VPC) this resource is going to be deployed into"
+	
 }
 
 variable "subnet_name" {
