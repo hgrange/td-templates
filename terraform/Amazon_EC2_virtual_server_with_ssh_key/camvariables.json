@@ -62,7 +62,7 @@
 			"name": "aws_image",
 			"type": "string",
 			"description": "Operating system image id / template that should be used when creating the virtual image",
-			"default": "CentOS Linux 7*",
+			"default": "CentOS 7*",
 			"hidden": false,
 			"label": "Operating System ID",
 			"secured": false,
