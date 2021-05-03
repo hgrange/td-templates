@@ -93,6 +93,7 @@
 			"hidden": false,
 			"immutable": false,
 			"label": "Virtual Private Cloud",
+			"defaut": "10.4.0.0/24 - POC-INFRA/FORGES",
 			"name": "vpc_name_tag",
 			"required": true,
 			"secured": false,
@@ -103,6 +104,7 @@
 			"immutable": false,
 			"label": "Subnet Name",
 			"name": "subnet_name",
+			"default": "POC-INFRA/FORGES Infra Private Subnet 10.4.0.0/28",
 			"required": true,
 			"secured": false,
 			"type": "string"
@@ -112,6 +114,7 @@
 			"immutable": false,
 			"label": "Public SSH Key Name",
 			"name": "public_ssh_key_name",
+			"default": "public_key",
 			"required": true,
 			"secured": false,
 			"type": "string"
@@ -121,6 +124,7 @@
 			"immutable": false,
 			"label": "Public SSH Key",
 			"name": "public_ssh_key",
+			"default": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQC67fxEd7C5SD+kM97m9B6TpV73JUGw6g3zvTYLj9SdtS59rC3yTRxWv3i1SzdPRJjv4LmcQEAZNbS3PBf0mFGqHSKz5LH4BDNgieDa8CxfuEGeygbugBaWZ0IqnOHdSUB3ErK09l1DpdnZ42D70hAtwScN0O5bxAdjg7gyIPvHHZZuzF89eEXEbTKAx3z4XHlbP1fM34pXZ1suTiao2IhlDq6oyvVxD/9O8e4fW6F64yoU4dIeECoAHFQ0MOpjDA6bG/5LEZm+RdjlBEt/uBdwJ/7L5WGT/8QpeHXhF04yHP+Szozd/2Ec/NSoDvE1r3w0QC5X9hRqq6g8wAe4YFM1n0JjCNYZ5So5BWcC7oI91PB5++9Xh5e+gSqdXl85UG4hm+bRfuo0UOJuzTc/Y8r/xlle0903r9UFNnyr0Je590Yu4op95qxStqGiH4x9+cxhyeKzM5W2vVOg4M4e6qeGmr8bIn3diRq41VmBFHcpW9Jh7j1eD48eFjZDOe8khC0=",
 			"required": true,
 			"secured": false,
 			"type": "string"
