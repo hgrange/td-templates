@@ -34,11 +34,13 @@ data "vsphere_datacenter" "vm_1_datacenter" {
 data "vsphere_datastore" "vm_1_datastore" {
   name          = var.vm_1_root_disk_datastore
   datacenter_id = data.vsphere_datacenter.vm_1_datacenter.id
+  default       = "ssd-010919"
 }
 
 data "vsphere_compute_cluster" "cluster" {
   name          = var.vm_1_cluster
   datacenter_id = data.vsphere_datacenter.vm_1_datacenter.id
+  default     = "Cluster1"
 }
 
 data "vsphere_network" "vm_1_network" {
@@ -57,7 +59,7 @@ data "vsphere_virtual_machine" "vm_1_template" {
 variable "vm_1_name" {
   type        = string
   description = "Generated"
-  default     = "vm_1"
+  default     = "testHerve"
 }
 
 #########################################################
@@ -70,10 +72,12 @@ variable "vm_1_folder" {
 
 variable "vm_1_datacenter" {
   description = "Target vSphere datacenter for virtual machine creation"
+  default     = "pcc-92-222-223-31_datacenter3394"
 }
 
 variable "vm_1_domain" {
   description = "Domain Name of virtual machine"
+  domain    = "test.internal"
 }
 
 variable "vm_1_number_of_vcpu" {
@@ -101,6 +105,7 @@ variable "vm_1_adapter_type" {
 
 variable "vm_1_root_disk_datastore" {
   description = "Data store or storage cluster name for target virtual machine's disks"
+  default     = "	ssd-010919"
 }
 
 variable "vm_1_root_disk_type" {
@@ -123,11 +128,17 @@ variable "vm_1_root_disk_keep_on_remove" {
 
 variable "vm_1_root_disk_size" {
   description = "Size of template disk volume. Should be equal to template's disk size"
-  default     = "25"
+  default     = "20"
 }
 
 variable "vm_1-image" {
   description = "Operating system image id / template that should be used when creating the virtual image"
+  default     = "TestcloneIBM"
+}
+
+variable "vm_1_network_interface_label" {
+  description = "Network"
+  default     = "vxw-dvs-38-virtualwire-2-sid-5001-Dc3394_5001"
 }
 
 variable "vm_1_ipv4_address" {
