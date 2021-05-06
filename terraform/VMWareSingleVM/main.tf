@@ -169,6 +169,7 @@ resource "vsphere_virtual_machine" "vm_1" {
       linux_options {
         domain    = var.vm_1_domain
         host_name = var.vm_1_name
+        skip_customization = true
       }
 
       network_interface {
