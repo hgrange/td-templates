@@ -10,7 +10,8 @@
     },
     {
       "name": "ssh_keys",
-      "label": "SSH Keys"
+      "label": "SSH Keys",
+      "default": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDWVcdGD+xpfEiWYjSXRd1k77kFewP0JwNQLVDyTUefrWTVmFGlBN4ycc1M16TB2I+7V+ZxWZDdY8M11/WEiegTvCEs6XVziG9Aa6cUsrALAWuxBdOcK4Hvpb0W09AaLep8k2DAuRiVswxUi8CcEbenvMu4GzJqs7t77Zm1KN65hKyw4PYAMg9aKt2VmrM7LoYZCr8759y8GIaiwE3UZDb3YAc9nfxc+el+2Nga9o+mwyD1VmjTuSRYs37ndBRsry5au6cuP2T1JYZWfRh9Fpnj3bVbeGrmjLuoSTruzqJKTr/dUBklEZvsLPkpqN5cXLt2LDmws7p+uaNRrgok8nGt"
     },
     {
       "name": "virtualmachine",
@@ -44,31 +45,9 @@
       "name": "vm_1_name",
       "type": "string",
       "description": "Hostname of virtual machine",
-      "default": "vm-1",
+      "default": "testHerve",
       "hidden": false,
       "label": "Vm 1 Hostname - vm_1",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "group_name": "virtualmachine"
-    },
-    {
-      "name": "vm_1_dns_servers",
-      "type": "list",
-      "description": "DNS servers for the virtual network adapter",
-      "hidden": false,
-      "label": "DNS Servers - vm_1",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "group_name": "virtualmachine"
-    },
-    {
-      "name": "vm_1_dns_suffixes",
-      "type": "list",
-      "description": "Name resolution suffixes for the virtual network adapter",
-      "hidden": false,
-      "label": "DNS Suffixes - vm_1",
       "secured": false,
       "required": true,
       "immutable": false,
@@ -105,7 +84,8 @@
       "secured": false,
       "required": true,
       "immutable": false,
-      "group_name": "virtualmachine"
+      "group_name": "virtualmachine",
+      "default": "test.internal"
     },
     {
       "name": "vm_1-image",
@@ -116,13 +96,14 @@
       "secured": false,
       "required": true,
       "immutable": false,
-      "group_name": "virtualmachine"
+      "group_name": "virtualmachine",
+      "default": "TestcloneIBM"
     },
     {
       "name": "vm_1_root_disk_size",
       "type": "string",
       "description": "Size of template disk volume. Should be equal to template's disk size",
-      "default": "25",
+      "default": "20",
       "hidden": false,
       "label": "Root Disk Size - vm_1",
       "secured": false,
@@ -177,7 +158,8 @@
       "secured": false,
       "required": true,
       "immutable": false,
-      "group_name": "virtualmachine"
+      "group_name": "virtualmachine",
+      "default": "ssd-010919"
     },
     {
       "name": "vm_1_root_disk_type",
@@ -214,7 +196,8 @@
       "secured": false,
       "required": true,
       "immutable": false,
-      "group_name": "virtualmachine"
+      "group_name": "virtualmachine",
+      "default": "10.0.0.1"
     },
     {
       "name": "vm_1_ipv4_address",
@@ -225,7 +208,8 @@
       "secured": false,
       "required": true,
       "immutable": false,
-      "group_name": "virtualmachine"
+      "group_name": "virtualmachine",
+      "default": "10.0.0.2"
     },
     {
       "name": "vm_1_memory",
@@ -248,7 +232,8 @@
       "secured": false,
       "required": true,
       "immutable": false,
-      "group_name": "virtualmachine"
+      "group_name": "virtualmachine",
+      "default": "24"
     },
     {
       "name": "vm_1_number_of_vcpu",
@@ -271,7 +256,8 @@
       "secured": false,
       "required": true,
       "immutable": false,
-      "group_name": "virtualmachine"
+      "group_name": "virtualmachine",
+      "default": "vxw-dvs-38-virtualwire-2-sid-5001-Dc3394_5001"
     },
     {
       "name": "vm_1_cluster",
@@ -282,7 +268,8 @@
       "secured": false,
       "required": false,
       "immutable": false,
-      "group_name": "cloud"
+      "group_name": "cloud",
+      "default": "Cluster1"
     },
     {
       "name": "vm_1_datacenter",
@@ -293,7 +280,8 @@
       "secured": false,
       "required": false,
       "immutable": false,
-      "group_name": "cloud"
+      "group_name": "cloud",
+      "default": "pcc-92-222-223-31_datacenter3394"
     },
     {
       "name": "vm_1_folder",
@@ -335,7 +323,7 @@
       "hidden": false,
       "label": "vSphere Resource Pool - vm_1",
       "secured": false,
-      "required": true,
+      "required": false,
       "immutable": false,
       "group_name": "virtualmachine"
     }
