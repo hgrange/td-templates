@@ -34,13 +34,11 @@ data "vsphere_datacenter" "vm_1_datacenter" {
 data "vsphere_datastore" "vm_1_datastore" {
   name          = var.vm_1_root_disk_datastore
   datacenter_id = data.vsphere_datacenter.vm_1_datacenter.id
-  default       = "ssd-010919"
 }
 
 data "vsphere_compute_cluster" "cluster" {
   name          = var.vm_1_cluster
   datacenter_id = data.vsphere_datacenter.vm_1_datacenter.id
-  default     = "Cluster1"
 }
 
 data "vsphere_network" "vm_1_network" {
@@ -92,6 +90,7 @@ variable "vm_1_memory" {
 
 variable "vm_1_cluster" {
   description = "Target vSphere cluster to host the virtual machine"
+  default     = "Cluster1"
 }
 
 variable "vm_1_adapter_type" {
