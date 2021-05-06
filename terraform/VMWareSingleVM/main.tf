@@ -41,11 +41,6 @@ data "vsphere_compute_cluster" "cluster" {
   datacenter_id = data.vsphere_datacenter.vm_1_datacenter.id
 }
 
-data "vsphere_resource_pool" "vm_1_resource_pool" {
-  name          = var.vm_1_resource_pool
-  datacenter_id = data.vsphere_datacenter.vm_1_datacenter.id
-}
-
 data "vsphere_network" "vm_1_network" {
   name          = var.vm_1_network_interface_label
   datacenter_id = data.vsphere_datacenter.vm_1_datacenter.id
@@ -93,10 +88,6 @@ variable "vm_1_memory" {
 
 variable "vm_1_cluster" {
   description = "Target vSphere cluster to host the virtual machine"
-}
-
-variable "vm_1_resource_pool" {
-  description = "Target vSphere Resource Pool to host the virtual machine"
 }
 
 variable "vm_1_dns_suffixes" {
