@@ -224,18 +224,6 @@
       "group_name": "virtualmachine"
     },
     {
-      "name": "vm_1_ipv4_prefix_length",
-      "type": "string",
-      "description": "IPv4 prefix length for vNIC configuration. The value must be a number between 8 and 32",
-      "hidden": false,
-      "label": "Virtual Machine Netmask Prefix - vm_1",
-      "secured": false,
-      "required": true,
-      "immutable": false,
-      "group_name": "virtualmachine",
-      "default": "24"
-    },
-    {
       "name": "vm_1_number_of_vcpu",
       "type": "string",
       "description": "Number of virtual CPU for the virtual machine, which is required to be a positive Integer",
@@ -313,17 +301,6 @@
         }
       ],
       "required": true,
-      "immutable": false,
-      "group_name": "virtualmachine"
-    },
-    {
-      "name": "vm_1_resource_pool",
-      "type": "string",
-      "description": "Target vSphere Resource Pool to host the virtual machine",
-      "hidden": false,
-      "label": "vSphere Resource Pool - vm_1",
-      "secured": false,
-      "required": false,
       "immutable": false,
       "group_name": "virtualmachine"
     }
