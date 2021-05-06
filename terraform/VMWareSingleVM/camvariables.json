@@ -97,7 +97,7 @@
       "required": true,
       "immutable": false,
       "group_name": "virtualmachine",
-      "default": "TestcloneIBM"
+      "default": "templateCentos7"
     },
     {
       "name": "vm_1_root_disk_size",
