@@ -77,7 +77,7 @@ variable "vm_1_datacenter" {
 
 variable "vm_1_domain" {
   description = "Domain Name of virtual machine"
-  domain    = "test.internal"
+  default    = "test.internal"
 }
 
 variable "vm_1_number_of_vcpu" {
