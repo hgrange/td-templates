@@ -90,30 +90,8 @@ variable "vm_1_cluster" {
   description = "Target vSphere cluster to host the virtual machine"
 }
 
-variable "vm_1_dns_suffixes" {
-  type        = list(string)
-  description = "Name resolution suffixes for the virtual network adapter"
-}
-
-variable "vm_1_dns_servers" {
-  type        = list(string)
-  description = "DNS servers for the virtual network adapter"
-}
-
 variable "vm_1_network_interface_label" {
   description = "vSphere port group or network label for virtual machine's vNIC"
-}
-
-variable "vm_1_ipv4_gateway" {
-  description = "IPv4 gateway for vNIC configuration"
-}
-
-variable "vm_1_ipv4_address" {
-  description = "IPv4 address for vNIC configuration"
-}
-
-variable "vm_1_ipv4_prefix_length" {
-  description = "IPv4 prefix length for vNIC configuration. The value must be a number between 8 and 32"
 }
 
 variable "vm_1_adapter_type" {
@@ -152,6 +130,21 @@ variable "vm_1-image" {
   description = "Operating system image id / template that should be used when creating the virtual image"
 }
 
+variable "vm_1_ipv4_address" {
+  type        = string
+  description = "Ip Address"
+  default     = "10.0.0.2"
+}
+variable "vm_1_netmask" {
+  type        = string
+  description = "Netmask"
+  default     = "24"
+}
+variable "vm_1_ipv4_gateway" {
+  type        = string
+  description = "Gateway"
+  default     = "10.0.0.1"
+}
 # vsphere vm
 resource "vsphere_virtual_machine" "vm_1" {
   name             = var.vm_1_name
@@ -174,12 +167,10 @@ resource "vsphere_virtual_machine" "vm_1" {
 
       network_interface {
         ipv4_address = var.vm_1_ipv4_address
-        ipv4_netmask = var.vm_1_ipv4_prefix_length
+        ipv4_netmask = var.vm_1_netmask
       }
 
       ipv4_gateway    = var.vm_1_ipv4_gateway
-      dns_suffix_list = var.vm_1_dns_suffixes
-      dns_server_list = var.vm_1_dns_servers
     }
   }
 
