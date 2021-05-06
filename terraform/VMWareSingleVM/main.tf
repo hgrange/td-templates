@@ -105,7 +105,7 @@ variable "vm_1_adapter_type" {
 
 variable "vm_1_root_disk_datastore" {
   description = "Data store or storage cluster name for target virtual machine's disks"
-  default     = "	ssd-010919"
+  default     = "ssd-010919"
 }
 
 variable "vm_1_root_disk_type" {
