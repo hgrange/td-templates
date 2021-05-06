@@ -128,7 +128,7 @@ variable "vm_1_root_disk_size" {
 
 variable "vm_1-image" {
   description = "Operating system image id / template that should be used when creating the virtual image"
-  default     = "TestcloneIBM"
+  default     = "templateCentos7"
 }
 
 variable "vm_1_network_interface_label" {
