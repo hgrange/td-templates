@@ -94,10 +94,6 @@ variable "vm_1_cluster" {
   description = "Target vSphere cluster to host the virtual machine"
 }
 
-variable "vm_1_network_interface_label" {
-  description = "vSphere port group or network label for virtual machine's vNIC"
-}
-
 variable "vm_1_adapter_type" {
   description = "Network adapter type for vNIC Configuration"
   default     = "vmxnet3"
