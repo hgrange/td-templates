@@ -155,7 +155,6 @@ variable "vm_1_ipv4_gateway" {
 resource "vsphere_virtual_machine" "vm_1" {
   name             = var.vm_1_name
   folder           = var.vm_1_folder
-  skip_customization = true
   num_cpus         = var.vm_1_number_of_vcpu
   memory           = var.vm_1_memory
   resource_pool_id = data.vsphere_compute_cluster.cluster.resource_pool_id
