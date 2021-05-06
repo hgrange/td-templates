@@ -36,6 +36,11 @@ data "vsphere_datastore" "vm_1_datastore" {
   datacenter_id = data.vsphere_datacenter.vm_1_datacenter.id
 }
 
+data "vsphere_compute_cluster" "cluster" {
+  name          = var.vm_1_cluster
+  datacenter_id = "${data.vsphere_datacenter.dc.id}"
+}
+
 data "vsphere_resource_pool" "vm_1_resource_pool" {
   name          = var.vm_1_resource_pool
   datacenter_id = data.vsphere_datacenter.vm_1_datacenter.id
@@ -162,7 +167,7 @@ resource "vsphere_virtual_machine" "vm_1" {
   folder           = var.vm_1_folder
   num_cpus         = var.vm_1_number_of_vcpu
   memory           = var.vm_1_memory
-  resource_pool_id = data.vsphere_resource_pool.vm_1_resource_pool.id
+  resource_pool_id = data.vsphere_compute_cluster.cluster.resource_pool_id
   datastore_id     = data.vsphere_datastore.vm_1_datastore.id
   guest_id         = data.vsphere_virtual_machine.vm_1_template.guest_id
   scsi_type        = data.vsphere_virtual_machine.vm_1_template.scsi_type
