@@ -13,9 +13,9 @@ provider "tls" {
 resource "ibm_compute_vm_instance" "server1" {
   cores       = 1
   memory      = 1024
-  domain      = "${var.vm_server1_domain}"
+  domain      = "${var.vm_server_domain}"
   hostname    = "${var.vm_server1_hostname}"
-  datacenter  = "${var.vm_server1_datacenter}"
+  datacenter  = "${var.vm_server_datacenter}"
   ssh_key_ids = ["${ibm_compute_ssh_key.auth.id}"]
   os_reference_code = "${var.vm_webserver_os_reference_code}"
   hourly_billing = true
@@ -28,9 +28,9 @@ resource "ibm_compute_vm_instance" "server1" {
 resource "ibm_compute_vm_instance" "server2" {
   cores       = 1
   memory      = 1024
-  domain      = "${var.vm_server2_domain}"
+  domain      = "${var.vm_server_domain}"
   hostname    = "${var.vm_server2_hostname}"
-  datacenter  = "${var.vm_server2_datacenter}"
+  datacenter  = "${var.vm_server_datacenter}"
   ssh_key_ids = ["${ibm_compute_ssh_key.auth.id}"]
   os_reference_code = "${var.vm_webserver_os_reference_code}"
   hourly_billing = true
@@ -43,9 +43,9 @@ resource "ibm_compute_vm_instance" "server2" {
 resource "ibm_compute_vm_instance" "server3" {
   cores       = 1
   memory      = 1024
-  domain      = "${var.vm_server3_domain}"
+  domain      = "${var.vm_server_domain}"
   hostname    = "${var.vm_server3_hostname}"
-  datacenter  = "${var.vm_server3_datacenter}"
+  datacenter  = "${var.vm_server_datacenter}"
   ssh_key_ids = ["${ibm_compute_ssh_key.auth.id}"]
   os_reference_code = "${var.vm_webserver_os_reference_code}"
   hourly_billing = true
