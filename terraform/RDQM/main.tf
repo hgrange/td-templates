@@ -21,6 +21,7 @@ resource "ibm_compute_vm_instance" "server1" {
   hourly_billing = true
   public_vlan_id       = "${var.ibm_network_public_vlan_id}"
   private_vlan_id       = "${var.ibm_network_private_vlan_id}"
+  secondary_ip_count       = 4
   disks = [25, 25]
 }
 
@@ -35,6 +36,7 @@ resource "ibm_compute_vm_instance" "server2" {
   hourly_billing = true
   public_vlan_id       = "${var.ibm_network_public_vlan_id}"
   private_vlan_id       = "${var.ibm_network_private_vlan_id}"
+  secondary_ip_count       = 4
   disks = [25, 25]
 }
 
@@ -49,6 +51,7 @@ resource "ibm_compute_vm_instance" "server3" {
   hourly_billing = true
   public_vlan_id       = "${var.ibm_network_public_vlan_id}"
   private_vlan_id       = "${var.ibm_network_private_vlan_id}"
+  secondary_ip_count       = 4
   disks = [25, 25]
 }
 
