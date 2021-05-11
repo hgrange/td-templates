@@ -23,8 +23,8 @@
   "output_groups": [ ],
   "template_input_params": [
     {
-      "name": "vm_server1_domain",
-      "label": "Vm server1 Domain",
+      "name": "vm_server_domain",
+      "label": "Vm server Domain",
       "description": "The domain for the computing instance.",
       "type": "string",
       "default": "ibm.com",
@@ -79,8 +79,8 @@
       "immutable_after_create": false
     },
     {
-      "name": "vm_server1_datacenter",
-      "label": "Vm server1 Datacenter",
+      "name": "vm_server_datacenter",
+      "label": "Vm server Datacenter",
       "description": "The datacenter in which you want to provision the instance. NOTE: If dedicated_host_name or dedicated_host_id is provided then the datacenter should be same as the dedicated host datacenter.",
       "type": "string",
       "default": "par01",
@@ -107,7 +107,7 @@
       "immutable_after_create": false
     },
     {
-      "name": "vm_server1_os_reference_code",
+      "name": "vm_server_os_reference_code",
       "label": "Vm server Os Reference Code",
       "description": "Generated",
       "type": "string",
