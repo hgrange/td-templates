@@ -38,7 +38,7 @@ variable "ibm_ssh_key_name" {
   description = "Generated"
 }
 
-variable "vm_webserver_os_reference_code" {
+variable "vm_server_os_reference_code" {
   type = "string"
   description = "Generated"
   default     = "CENTOS_7_64"
