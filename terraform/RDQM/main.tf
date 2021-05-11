@@ -17,7 +17,7 @@ resource "ibm_compute_vm_instance" "server1" {
   hostname    = "${var.vm_server1_hostname}"
   datacenter  = "${var.vm_server_datacenter}"
   ssh_key_ids = ["${ibm_compute_ssh_key.auth.id}"]
-  os_reference_code = "${var.vm_webserver_os_reference_code}"
+  os_reference_code = "${var.vm_server_os_reference_code}"
   hourly_billing = true
   public_vlan_id       = "${var.ibm_network_public_vlan_id}"
   private_vlan_id       = "${var.ibm_network_private_vlan_id}"
@@ -32,7 +32,7 @@ resource "ibm_compute_vm_instance" "server2" {
   hostname    = "${var.vm_server2_hostname}"
   datacenter  = "${var.vm_server_datacenter}"
   ssh_key_ids = ["${ibm_compute_ssh_key.auth.id}"]
-  os_reference_code = "${var.vm_webserver_os_reference_code}"
+  os_reference_code = "${var.vm_server_os_reference_code}"
   hourly_billing = true
   public_vlan_id       = "${var.ibm_network_public_vlan_id}"
   private_vlan_id       = "${var.ibm_network_private_vlan_id}"
@@ -47,7 +47,7 @@ resource "ibm_compute_vm_instance" "server3" {
   hostname    = "${var.vm_server3_hostname}"
   datacenter  = "${var.vm_server_datacenter}"
   ssh_key_ids = ["${ibm_compute_ssh_key.auth.id}"]
-  os_reference_code = "${var.vm_webserver_os_reference_code}"
+  os_reference_code = "${var.vm_server_os_reference_code}"
   hourly_billing = true
   public_vlan_id       = "${var.ibm_network_public_vlan_id}"
   private_vlan_id       = "${var.ibm_network_private_vlan_id}"
