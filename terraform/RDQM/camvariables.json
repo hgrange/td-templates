@@ -225,28 +225,8 @@
       "type": "string"
     },
      {
-      "name": "IP_address3_server1",
-      "label": "Ip Address3 server1",
-      "description": "null",
-      "group_name": "",
-      "secured": false,
-      "hidden": false,
-      "shortname": "",
-      "type": "string"
-    },
-    {
-      "name": "IP_address3_server2",
-      "label": "Ip Address3 server2",
-      "description": "null",
-      "group_name": "",
-      "secured": false,
-      "hidden": false,
-      "shortname": "",
-      "type": "string"
-    },
-    {
-      "name": "IP_address3_server3",
-      "label": "Ip Address3 server3",
+      "name": "IP_addresses_secondary",
+      "label": "Ip Addresses Secondary",
       "description": "null",
       "group_name": "",
       "secured": false,
