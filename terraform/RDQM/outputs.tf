@@ -25,8 +25,17 @@ output "IP_address2_server3" {
 #output "IP_adresses_secondary" {
 #  value = "${ibm_compute_vm_instance.server1.secondary_ip_addresses}"
 #}
-output "IP_adresses_secondary" {
+output "IP_secondary_server1" {
   value = "${ibm_compute_vm_instance.server1.secondary_ip_addresses[0]}"
+}
+output "IP_secondary_server2" {
+  value = "${ibm_compute_vm_instance.server1.secondary_ip_addresses[1]}"
+}
+output "IP_secondary_server3" {
+  value = "${ibm_compute_vm_instance.server1.secondary_ip_addresses[2]}"
+}
+output "IP_secondary_floatip" {
+  value = "${ibm_compute_vm_instance.server1.secondary_ip_addresses[3]}"
 }
 output "TestSecureField" {
   value = "${var.testsecurefield}"
