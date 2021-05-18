@@ -22,8 +22,11 @@ output "IP_address_server3" {
 output "IP_address2_server3" {
   value = "${ibm_compute_vm_instance.server3.ipv4_address_private}"
 }
+#output "IP_adresses_secondary" {
+#  value = "${ibm_compute_vm_instance.server1.secondary_ip_addresses}"
+#}
 output "IP_adresses_secondary" {
-  value = "${ibm_compute_vm_instance.server1.secondary_ip_addresses}"
+  value = "${ibm_compute_vm_instance.server1.secondary_ip_addresses[0]}"
 }
 output "TestSecureField" {
   value = "${var.testsecurefield}"
